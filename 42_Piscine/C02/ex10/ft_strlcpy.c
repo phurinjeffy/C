@@ -34,16 +34,16 @@ unsigned int    ft_strlcpy(char *dest, char *src, unsigned int size)
     return (buffer);
 }
 
-int main(void)
-{
-    char *str1 = "hellojeffjeffjeff";
-    char *str2 = "HELLO";
+// int main(void)
+// {
+//     char *str1 = "hellojeffjeffjeff";
+//     char *str2 = "HELLO";
 
-    int buffer;
+//     int buffer;
 
-    buffer = ft_strlcpy(str2, str1, 5);
+//     buffer = ft_strlcpy(str2, str1, 5);
 
-    printf("%i", buffer);
+//     printf("%i", buffer);
 
-    return 0;
-}
+//     return 0;
+// }

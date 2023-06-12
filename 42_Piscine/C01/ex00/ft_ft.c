@@ -5,13 +5,13 @@ void    ft_ft(int *nbr)
     *nbr = 42;
 }
 
-int main(void)
-{
-    int a;
-    int *ptr = &a;
-    ft_ft(ptr);
+// int main(void)
+// {
+//     int a;
+//     int *ptr = &a;
+//     ft_ft(ptr);
 
-    printf("%i", a);
+//     printf("%i", a);
 
-    return 0;
-}
+//     return 0;
+// }

@@ -30,13 +30,13 @@ int    ft_str_is_uppercase(char *str)
     return 1;
 }
 
-int main(void)
-{
-    char *str1 = "ABCDADSJKL";
-    char *str2 = "#!@kldjas321";
-    char *str3 = "";
+// int main(void)
+// {
+//     char *str1 = "ABCDADSJKL";
+//     char *str2 = "#!@kldjas321";
+//     char *str3 = "";
 
-    printf("%i\n", ft_str_is_uppercase(str1));
-    printf("%i\n", ft_str_is_uppercase(str2));
-    printf("%i\n", ft_str_is_uppercase(str3));
-}
+//     printf("%i\n", ft_str_is_uppercase(str1));
+//     printf("%i\n", ft_str_is_uppercase(str2));
+//     printf("%i\n", ft_str_is_uppercase(str3));
+// }

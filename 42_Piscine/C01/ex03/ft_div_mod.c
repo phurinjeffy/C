@@ -6,19 +6,19 @@ void    ft_div_mod(int a, int b, int *div, int *mod)
     *mod = a % b;
 }
 
-int main(void)
-{
-    int a = 50;
-    int b = 11;
-    int div;
-    int mod;
+// int main(void)
+// {
+//     int a = 50;
+//     int b = 11;
+//     int div;
+//     int mod;
 
-    int *ptrDiv = &div;
-    int *ptrMod = &mod;
+//     int *ptrDiv = &div;
+//     int *ptrMod = &mod;
 
-    ft_div_mod(a, b, ptrDiv, ptrMod);
+//     ft_div_mod(a, b, ptrDiv, ptrMod);
 
-    printf("%i | %i", div, mod);
+//     printf("%i | %i", div, mod);
 
-    return 0;
-}
+//     return 0;
+// }

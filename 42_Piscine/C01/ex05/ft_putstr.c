@@ -23,11 +23,11 @@ void    ft_putstr(char *str)
     write(1, str, len);
 }
 
-int main(void)
-{
-    char *str;
-    str = "HELLO WORLD";
-    ft_putstr(str);
+// int main(void)
+// {
+//     char *str;
+//     str = "HELLO WORLD";
+//     ft_putstr(str);
 
-    return 0;
-}
+//     return 0;
+// }

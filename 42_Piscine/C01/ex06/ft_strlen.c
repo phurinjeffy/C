@@ -15,13 +15,13 @@ int     ft_strlen(char *str)
     return (len);
 }
 
-int main(void)
-{
-    char *str;
-    str = "HELLO WORLD";
-    int len = ft_strlen(str);
+// int main(void)
+// {
+//     char *str;
+//     str = "HELLO WORLD";
+//     int len = ft_strlen(str);
 
-    printf("%i", len);
+//     printf("%i", len);
 
-    return 0;
-}
+//     return 0;
+// }

@@ -30,14 +30,14 @@ char    *ft_strlowcase(char *str)
     return (str);
 }
 
-int main(void)
-{
-    char str1[] = "ABCdsioaDdasjAEF";
-    char *str2;
+// int main(void)
+// {
+//     char str1[] = "ABCdsioaDdasjAEF";
+//     char *str2;
 
-    str2 = ft_strlowcase(str1);
+//     str2 = ft_strlowcase(str1);
 
-    printf("%s\n", str2);
+//     printf("%s\n", str2);
 
-    return 0;
-}
+//     return 0;
+// }

@@ -7,14 +7,14 @@ char    *ft_strcpy(char *dest, char *src)
     return (dest);
 }
 
-int main(void)
-{
-    char *str1 = "hello";
-    char *str2 = "test";
+// int main(void)
+// {
+//     char *str1 = "hello";
+//     char *str2 = "test";
 
-    str2 = ft_strcpy(str2, str1);
+//     str2 = ft_strcpy(str2, str1);
 
-    printf("%s", str2);
+//     printf("%s", str2);
 
-    return 0;
-}
+//     return 0;
+// }

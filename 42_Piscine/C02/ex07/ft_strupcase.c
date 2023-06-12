@@ -30,14 +30,14 @@ char    *ft_strupcase(char *str)
     return (str);
 }
 
-int main(void)
-{
-    char str1[] = "abcADLKSAJdDSAKLefg";
-    char *str2;
+// int main(void)
+// {
+//     char str1[] = "abcADLKSAJdDSAKLefg";
+//     char *str2;
 
-    str2 = ft_strupcase(str1);
+//     str2 = ft_strupcase(str1);
 
-    printf("%s\n", str2);
+//     printf("%s\n", str2);
 
-    return 0;
-}
+//     return 0;
+// }

@@ -15,13 +15,13 @@ int     ft_strlen(char *str)
 
 char    *ft_strncpy(char *dest, char *src, unsigned int n)
 {
-    if (ft_strlen(dest) > 0)
-    {
-        dest = src;
-        return (dest);
-    }
+    // if (ft_strlen(dest) > 0)
+    // {
+    //     dest = src;
+    //     return (dest);
+    // }
 
-    int i;
+    unsigned int i;
 
     i = 0;
     while (i < n)
@@ -33,14 +33,14 @@ char    *ft_strncpy(char *dest, char *src, unsigned int n)
     return (dest);
 }
 
-int main(void)
-{
-    char *str1 = "hellojeffjeffjeff";
-    char *str2 = "test";
+// int main(void)
+// {
+//     char *str1 = "hellojeffjeffjeff";
+//     char *str2 = "test";
 
-    str2 = ft_strncpy(str2, str1, 5);
+//     str2 = ft_strncpy(str2, str1, 5);
 
-    printf("%s", str2);
+//     printf("%s", str2);
 
-    return 0;
-}
+//     return 0;
+// }

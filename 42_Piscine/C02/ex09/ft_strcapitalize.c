@@ -26,7 +26,7 @@ char    *ft_strcapitalize(char *str)
     i = 1;
     while (i < ft_strlen(str))
     {
-        if (str[i-1] == ' ')
+        if (!((97 <= str[i-1] && str[i-1] <= 122) || (65 <= str[i-1] && str[i-1] <= 90) || (48 <= str[i-1] && str[i-1] <= 57)))
         {
             check = 1;
         }
@@ -38,20 +38,24 @@ char    *ft_strcapitalize(char *str)
         {
             str[i] -= 32;
         }
+        else if ((65 <= str[i] && str[i] <= 90) && check == 0)
+        {
+            str[i] += 32;
+        }
         ++i;
     }
 
     return (str);
 }
 
-int main(void)
-{
-    char str1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
-    char *str2;
+// int main(void)
+// {
+//     char str1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+//     char *str2;
 
-    str2 = ft_strcapitalize(str1);
+//     str2 = ft_strcapitalize(str1);
 
-    printf("%s\n", str2);
+//     printf("%s\n", str2);
 
-    return 0;
-}
+//     return 0;
+// }

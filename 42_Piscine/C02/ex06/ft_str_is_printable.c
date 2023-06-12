@@ -30,13 +30,13 @@ int    ft_str_is_printable(char *str)
     return 1;
 }
 
-int main(void)
-{
-    char *str1 = "ABCDADSJKL";
-    char *str2 = "#!@kldjas321";
-    char *str3 = "";
+// int main(void)
+// {
+//     char *str1 = "ABCDADSJKL";
+//     char *str2 = "#!@kldjas321";
+//     char *str3 = "";
 
-    printf("%i\n", ft_str_is_printable(str1));
-    printf("%i\n", ft_str_is_printable(str2));
-    printf("%i\n", ft_str_is_printable(str3));
-}
+//     printf("%i\n", ft_str_is_printable(str1));
+//     printf("%i\n", ft_str_is_printable(str2));
+//     printf("%i\n", ft_str_is_printable(str3));
+// }
