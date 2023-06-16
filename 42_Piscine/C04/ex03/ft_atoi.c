@@ -1,45 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pvanasri <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/16 16:14:05 by pvanasri          #+#    #+#             */
+/*   Updated: 2023/06/16 17:55:44 by pvanasri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-int ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-    int neg_count;
-    int result;
-    int i;
-    int j;
+	int	result;
+	int	sign;
 
-    neg_count = 0;
-    result = 0;
-    i = 0;
-    while (str[i] != '\0' && ('0' <= str[i] && str[i] <= '9') || str[i] == '+' || str[i] == '-' || (9 <= str[i] && str[i] <= 13) || str[i] == 32)
-    {
-        if (str[i] == '-')
-        {
-            ++neg_count;
-        }
-        if ('0' <= str[i] && str[i] <= '9')
-        {
-            j = i;
-            while ('0' <= str[j] && str[j] <= '9')
-            {
-                result = result * 10 + (str[j] - '0');
-                ++j;
-            }
-            if (!('0' <= str[j] && str[j] <= '9'))
-                break;
-        }
-        ++i;
-    }
-
-    if ((neg_count % 2) != 0)
-    {
-        result *= -1;
-    }
-    return (result);
+	result = 0;
+	while (*str == 32 || (9 <= *str && *str <= 13))
+		++str;
+	sign = 1;
+	while (*str == '-' || *str == '+')
+	{
+		if (*str == '-')
+			sign *= -1;
+		++str;
+	}
+	while ('0' <= *str && *str <= '9')
+	{
+		result *= 10;
+		result += *str - '0';
+		++str;
+	}
+	result *= sign;
+	return (result);
 }
 
-int main()
+/*int	main(void)
 {
-    printf("%i", ft_atoi(" ---+--+1234ab567"));
-    // printf("%i", ft_atoi("987654"));
-    return (0);
-}
+	printf("%i", ft_atoi(" ---+--+1234ab567"));
+	return (0);
+}*/
